@@ -1,0 +1,10 @@
+.signin-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://wallpapercave.com/wp/wp3487924.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

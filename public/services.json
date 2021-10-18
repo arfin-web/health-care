@@ -2,7 +2,9 @@
     {
         "id": 1,
         "doctor": "Dr Alfred",
-        "drimg": "https://img.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg?size=626&ext=jpg",
+        "department": "Eye Specialist",
+        "drDes": "World's Best Eye Specialists. He is top rated doctor in USA",
+        "drimg": "https://yt3.ggpht.com/ytc/AKedOLQ-TfQ3t1-kxvAZ1P7eg7eS78fYMHfgiuFwbbph=s900-c-k-c0x00ffffff-no-rj",
         "title": "Eye care",
         "description": "World's best eye specialists Work here with us. We provide you the best quality medical or any kind of heath care related services.",
         "image": "https://images.medicinenet.com/images/image_collection/anatomy/eye-anatomy.jpg"
@@ -10,7 +12,9 @@
     {
         "id": 2,
         "doctor": "Dr John",
-        "drimg": "https://img.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg?size=626&ext=jpg",
+        "department": "Medical Specialist",
+        "drDes": "World's Best Medical Specialists. He is top rated doctor in USA",
+        "drimg": "https://media.istockphoto.com/photos/never-fear-the-doctor-is-here-picture-id507954725?k=20&m=507954725&s=612x612&w=0&h=8i95b60DdEu5SWUTzylXzRF-blhfthg5tfqp9xU1Z_g=",
         "title": "Medical Cheakup",
         "description": "World's best Medical specialists Work here with us. We provide you the best quality medical or any kind of heath care related services.",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE9jOnggKJGE4jDswOGjj64XmnoyIdAIgrIWumkUKUgLhL5gOAu_Mm_6sngFzzrFSzHUA&usqp=CAU"
@@ -18,7 +22,9 @@
     {
         "id": 3,
         "doctor": "Dr Mash",
-        "drimg": "https://img.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg?size=626&ext=jpg",
+        "department": "Dental Specialist",
+        "drDes": "World's Best Dental Specialists. He is top rated doctor in USA",
+        "drimg": "https://post.healthline.com/wp-content/uploads/2019/01/Male_Doctor_732x549-thumbnail.jpg",
         "title": "Dental Care",
         "description": "World's best Dental specialists Work here with us. We provide you the best quality medical or any kind of heath care related services.",
         "image": "https://edospecialisthospital.com/wp-content/uploads/2020/09/Dentist.jpg"
@@ -26,7 +32,9 @@
     {
         "id": 4,
         "doctor": "Dr Mohr",
-        "drimg": "https://img.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg?size=626&ext=jpg",
+        "department": "Cardiology Specialist",
+        "drDes": "World's Best Cardiology Specialists. He is top rated doctor in USA",
+        "drimg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnq71xfxUkRJNdIWKdok_6QzA0XLAqbse5wZ21apFu2dAvqYLGN01XGiRRXCwoGkLOOVQ&usqp=CAU",
         "title": "Cardiology",
         "description": "World's best Cardiologists Work here with us. We provide you the best quality medical or any kind of heath care related services.",
         "image": "https://columbiamemorial.org/wp-content/uploads/2018/02/heart-stethescope.jpg"
@@ -34,15 +42,19 @@
     {
         "id": 5,
         "doctor": "Dr Alexa",
-        "drimg": "https://img.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg?size=626&ext=jpg",
+        "department": "Laboratory Specialist",
+        "drDes": "World's Best Laboratory Specialists. He is top rated doctor in USA",
+        "drimg": "https://images.theconversation.com/files/304957/original/file-20191203-66986-im7o5.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop",
         "title": "Laboratory Service",
         "description": "World's best Lab specialists Work here with us. We provide you the best quality medical or any kind of heath care related services.",
         "image": "https://media.istockphoto.com/photos/close-up-of-test-tubes-being-used-in-chemical-lab-picture-id1156456850?k=20&m=1156456850&s=612x612&w=0&h=L8qWIPJGKwvGpJxxlE5L-TKXsztQ3_9xilYlwaFyMJs="
     },
     {
         "id": 6,
-        "doctor": "Dr simu",
-        "drimg": "https://img.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg?size=626&ext=jpg",
+        "doctor": "Dr Simu",
+        "department": "Vaccine Specialist",
+        "drDes": "World's Best Vaccine Specialists. He is top rated doctor in USA",
+        "drimg": "https://www.independent.ie/irish-news/education/671f1/40328133.ece/AUTOCROP/w620/A%20young%20caring%20doctor",
         "title": "Vaccination",
         "description": "Here we provide covid-19 vaccine with proper guideline",
         "image": "https://middlewood.dbdstage.co.uk/wp-content/uploads/2020/11/Untitled-design-54.jpg"

@@ -1,0 +1,16 @@
+.about-container {
+    height: 60vh;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/back_pic/04/04/03/285809807996bcc.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    margin-top: 130px;
+    font-size: 70px;
+}

@@ -1,8 +1,16 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import './Service.css';
 
 const Service = ({ service }) => {
-    const { image, title, doctor } = service;
+
+    const history = useHistory();
+
+    const { image, title, doctor, id } = service;
+
+    const handleServiceDetails = () => {
+        history.push(`./service/${id}`);
+    }
 
     return (
         <>
@@ -14,7 +22,7 @@ const Service = ({ service }) => {
                     <div className="card-body ms-4">
                         <h3 className="card-title text-info">{title}</h3>
                         <h5 className="card-title text-muted">{doctor}</h5>
-                        <button type="button" className="btn btn-info text-white fw-bold mt-3 rounded-pill">Book Now</button>
+                        <button onClick={() => handleServiceDetails(id)} type="button" className="btn btn-info text-white fw-bold mt-3 rounded-pill">Book Now</button>
                     </div>
                 </div>
             </div>

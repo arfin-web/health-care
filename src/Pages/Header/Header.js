@@ -1,7 +1,16 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 
 const Header = () => {
+    const history = useHistory();
+    const handleSignIn = () => {
+        history.push("/signin");
+    }
+
+    const handleSignUp = () => {
+        history.push("/signup");
+    }
+
     return (
         <>
             {/* notice part */}
@@ -30,7 +39,13 @@ const Header = () => {
                                 <NavLink className="nav-link fs-5" to="/about">About</NavLink>
                             </li>
                             <li className="nav-item">
-                                <button type="button" className="btn btn-info fw-bold rounded-pill fs-5 text-white">Book Appointment</button>
+                                <NavLink className="nav-link fs-5" to="/contact">Contact</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <button onClick={handleSignIn} type="button" className="btn btn-info fw-bold rounded-pill fs-5 text-white me-2">Sign In</button>
+                            </li>
+                            <li className="nav-item">
+                                <button onClick={handleSignUp} type="button" className="btn btn-outline-info fw-bold rounded-pill fs-5">Sign Out</button>
                             </li>
                         </ul>
                     </div>

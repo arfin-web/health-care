@@ -13,7 +13,7 @@ const Services = () => {
     return (
         <>
             <div className="container mt-5 mb-5 overflow-hidden">
-                <h2 className="text-center text-info opacity-75 fw-bold mt-5">Our Services</h2>
+                <h2 className="text-center text-info opacity-75 fw-bold">Our Services</h2>
                 <p className="text-center text-muted mb-5">Take our World class quality Medical and Health Related services. </p>
                 <div className="row g-5 mb-5">
                     {
