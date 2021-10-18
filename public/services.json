@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "doctor": "Dr Alfred",
+        "drimg": "https://img.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg?size=626&ext=jpg",
+        "title": "Eye care",
+        "description": "World's best eye specialists Work here with us. We provide you the best quality medical or any kind of heath care related services.",
+        "image": "https://images.medicinenet.com/images/image_collection/anatomy/eye-anatomy.jpg"
+    },
+    {
+        "id": 2,
+        "doctor": "Dr John",
+        "drimg": "https://img.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg?size=626&ext=jpg",
+        "title": "Medical Cheakup",
+        "description": "World's best Medical specialists Work here with us. We provide you the best quality medical or any kind of heath care related services.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE9jOnggKJGE4jDswOGjj64XmnoyIdAIgrIWumkUKUgLhL5gOAu_Mm_6sngFzzrFSzHUA&usqp=CAU"
+    },
+    {
+        "id": 3,
+        "doctor": "Dr Mash",
+        "drimg": "https://img.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg?size=626&ext=jpg",
+        "title": "Dental Care",
+        "description": "World's best Dental specialists Work here with us. We provide you the best quality medical or any kind of heath care related services.",
+        "image": "https://edospecialisthospital.com/wp-content/uploads/2020/09/Dentist.jpg"
+    },
+    {
+        "id": 4,
+        "doctor": "Dr Mohr",
+        "drimg": "https://img.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg?size=626&ext=jpg",
+        "title": "Cardiology",
+        "description": "World's best Cardiologists Work here with us. We provide you the best quality medical or any kind of heath care related services.",
+        "image": "https://columbiamemorial.org/wp-content/uploads/2018/02/heart-stethescope.jpg"
+    },
+    {
+        "id": 5,
+        "doctor": "Dr Alexa",
+        "drimg": "https://img.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg?size=626&ext=jpg",
+        "title": "Laboratory Service",
+        "description": "World's best Lab specialists Work here with us. We provide you the best quality medical or any kind of heath care related services.",
+        "image": "https://media.istockphoto.com/photos/close-up-of-test-tubes-being-used-in-chemical-lab-picture-id1156456850?k=20&m=1156456850&s=612x612&w=0&h=L8qWIPJGKwvGpJxxlE5L-TKXsztQ3_9xilYlwaFyMJs="
+    },
+    {
+        "id": 6,
+        "doctor": "Dr simu",
+        "drimg": "https://img.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg?size=626&ext=jpg",
+        "title": "Vaccination",
+        "description": "Here we provide covid-19 vaccine with proper guideline",
+        "image": "https://middlewood.dbdstage.co.uk/wp-content/uploads/2020/11/Untitled-design-54.jpg"
+    }
+]

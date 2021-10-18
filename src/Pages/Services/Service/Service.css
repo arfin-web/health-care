@@ -1,0 +1,14 @@
+.service-img {
+    height: 230px;
+    transition: all linear 0.5s;
+}
+.service-box {
+    min-height: 470px;
+    transition: all linear 0.5s;
+}
+.service-box:hover {
+    height: 475px;
+}
+.service-box:hover .service-img{
+    height: 250px;
+}
