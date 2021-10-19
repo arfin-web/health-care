@@ -1,7 +1,12 @@
 import React from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
+import useAuth from '../../Hooks/useAuth';
+import './Header.css';
 
 const Header = () => {
+    const { user, logOut } = useAuth();
+    console.log(user);
+
     const history = useHistory();
     const handleSignIn = () => {
         history.push("/signin");
@@ -41,12 +46,31 @@ const Header = () => {
                             <li className="nav-item">
                                 <NavLink className="nav-link fs-5" to="/contact">Contact</NavLink>
                             </li>
-                            <li className="nav-item">
-                                <button onClick={handleSignIn} type="button" className="btn btn-info fw-bold rounded-pill fs-5 text-white me-2">Sign In</button>
-                            </li>
-                            <li className="nav-item">
-                                <button onClick={handleSignUp} type="button" className="btn btn-outline-info fw-bold rounded-pill fs-5">Sign Up</button>
-                            </li>
+                            {
+                                user ? <li className="nav-item">
+                                    <div className="dropdown dropstart">
+                                        <button className="btn btn-info dropdown-toggle text-white rounded-pill fs-5" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Profile
+                                        </button>
+                                        <ul className="dropdown-menu p-3 rounded-3 shadow-lg border-0" aria-labelledby="dropdownMenuButton1">
+                                            <li><img src={user?.photoURL} className="img-fluid" alt="profilePic" /></li>
+                                            <li className="text-info mb-3 mt-2"><h4>{user?.displayName}</h4></li>
+                                            <li className="text-muted mb-3">{user?.email}</li>
+                                            <li><button onClick={logOut} type="button" className="btn btn-info fw-bold rounded-pill fs-6 text-white">Sign Out</button></li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+                                    :
+                                    <div className="auth">
+                                        <li className="nav-item">
+                                            <button onClick={handleSignIn} type="button" className="btn btn-info fw-bold rounded-pill fs-5 text-white me-2 mb-2">Sign In</button>
+                                        </li>
+                                        <li className="nav-item">
+                                            <button onClick={handleSignUp} type="button" className="btn btn-outline-info fw-bold rounded-pill fs-5">Sign Up</button>
+                                        </li>
+                                    </div>
+                            }
                         </ul>
                     </div>
                 </div>

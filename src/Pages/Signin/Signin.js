@@ -1,10 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import useEmaiPassword from '../../Hooks/useEmailPassword';
+import useAuth from '../../Hooks/useAuth';
 import './Signin.css';
 
 const Signin = () => {
-    const { handleLogin, resetPassword, setEmail, setPassword, error } = useEmaiPassword();
+    const { handleLogin, resetPassword, signInWithGoogle, setEmail, setPassword, error } = useAuth();
 
     const handleEmail = (e) => {
         setEmail(e.target.value)
@@ -40,7 +40,7 @@ const Signin = () => {
                             <input type="submit" className="btn btn-info text-white" value="Sign In" />
                         </div>
                         <div className="col-12">
-                            <button type="button" className="btn btn-info text-white">Sign in with Google</button>
+                            <button onClick={signInWithGoogle} type="button" className="btn btn-info text-white">Sign in with Google</button>
                         </div>
                     </form>
                 </div>

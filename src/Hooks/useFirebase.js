@@ -1,20 +1,26 @@
 import {
     getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword,
-    onAuthStateChanged, sendEmailVerification, sendPasswordResetEmail
+    onAuthStateChanged, sendEmailVerification, sendPasswordResetEmail,
+    signInWithPopup, GoogleAuthProvider, signOut
 } from "firebase/auth";
 import { useEffect } from "react";
+import { useHistory } from "react-router";
 import { useState } from "react/cjs/react.development";
 import initializeAuthentication from "../Firebase/Firebase.init";
 
 initializeAuthentication();
 
-const useEmaiPassword = () => {
+const useFirebase = () => {
+    const history = useHistory()
+
     const [user, setUser] = useState();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState();
 
     const auth = getAuth();
+
+    const provider = new GoogleAuthProvider();
 
     const handleRegistration = (e) => {
         e.preventDefault();
@@ -28,6 +34,8 @@ const useEmaiPassword = () => {
                 console.log(result.user);
                 setError('');
                 emailVerification();
+                alert('Registration Complete');
+                history.push('/signin');
             })
             .catch(error => {
                 setError(error.message);
@@ -37,14 +45,14 @@ const useEmaiPassword = () => {
     const emailVerification = () => {
         sendEmailVerification(auth.currentUser)
             .then(result => {
-
+                alert('Check your inbox')
             })
     }
 
     const resetPassword = () => {
         sendPasswordResetEmail(auth, email)
             .then(result => {
-
+                alert('check your inbox')
             })
     }
 
@@ -55,10 +63,30 @@ const useEmaiPassword = () => {
                 setUser(result.user)
                 console.log(result.user);
                 setError('');
+                alert('Login Success')
+                history.push('/home');
             })
             .catch(error => {
                 setError(error.message);
             })
+    }
+
+    const signInWithGoogle = () => {
+        signInWithPopup(auth, provider)
+            .then((result) => {
+                setUser(result.user);
+                setError('');
+                alert('Login Success');
+                history.push('/home');
+            }).catch((error) => {
+                setError('')
+            });
+    }
+
+    const logOut = () => {
+        signOut(auth).then(() => {
+            setUser('');
+        })
     }
 
     useEffect(() => {
@@ -73,6 +101,8 @@ const useEmaiPassword = () => {
         handleRegistration,
         handleLogin,
         resetPassword,
+        signInWithGoogle,
+        logOut,
         setEmail,
         setPassword,
         user,
@@ -80,4 +110,4 @@ const useEmaiPassword = () => {
     }
 };
 
-export default useEmaiPassword;
+export default useFirebase;

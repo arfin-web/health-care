@@ -1,0 +1,9 @@
+.auth {
+    display: flex;
+}
+
+@media (max-width: 991.98px) {
+    .auth {
+        display: block;
+    }
+}
