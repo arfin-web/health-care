@@ -13,7 +13,7 @@ initializeAuthentication();
 const useFirebase = () => {
     const history = useHistory()
 
-    const [user, setUser] = useState();
+    const [user, setUser] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState();
