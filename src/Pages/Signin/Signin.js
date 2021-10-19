@@ -1,25 +1,46 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import useEmaiPassword from '../../Hooks/useEmailPassword';
 import './Signin.css';
 
 const Signin = () => {
+    const { handleLogin, resetPassword, setEmail, setPassword, error } = useEmaiPassword();
+
+    const handleEmail = (e) => {
+        setEmail(e.target.value)
+    }
+
+    const handlePassword = (e) => {
+        setPassword(e.target.value)
+    }
+
     return (
         <>
             <div className="container-fluid signin-container">
                 <div className="w-50 p-5 bg-white rounded-3 shadow-lg">
-                    <form className="row g-3">
+                    <form onSubmit={handleLogin} className="row g-3">
                         <div className="col-md-6">
                             <label htmlFor="inputEmail4" className="form-label text-info fw-bold opacity-75">Email</label>
-                            <input type="email" className="form-control" id="inputEmail4" />
+                            <input onBlur={handleEmail} type="email" className="form-control" id="inputEmail4" />
                         </div>
                         <div className="col-md-6">
                             <label htmlFor="inputPassword4" className="form-label text-info fw-bold opacity-75">Password</label>
-                            <input type="password" className="form-control" id="inputPassword4" />
+                            <input onBlur={handlePassword} type="password" className="form-control" id="inputPassword4" />
                         </div>
                         <div className="col-12">
-                            <button type="submit" className="btn btn-info text-white">Sign in</button>
+                            <button onClick={resetPassword} type="button" className="btn btn-info text-white">Reset Password</button>
                         </div>
                         <div className="col-12">
-                            <button type="submit" className="btn btn-info text-white">Sign in with Google</button>
+                            <h5 className="text-danger">{error}</h5>
+                        </div>
+                        <div className="col-12">
+                            <h5>Don't have an accunt? <NavLink className="text-info" to="/signup">Sign Up</NavLink></h5>
+                        </div>
+                        <div className="col-12">
+                            <input type="submit" className="btn btn-info text-white" value="Sign In" />
+                        </div>
+                        <div className="col-12">
+                            <button type="button" className="btn btn-info text-white">Sign in with Google</button>
                         </div>
                     </form>
                 </div>

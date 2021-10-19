@@ -71,7 +71,7 @@ const Featurebox = () => {
                         </div>
                     </div>
                 </div>
-                <div class="card border-0 rounded-3 shadow-lg mt-5">
+                <div className="card border-0 rounded-3 shadow-lg mt-5">
                     <div className="card-body">
                         <i className="fas fa-check-square fs-3 me-3 text-info"></i>
                         24 Hours Emergency Assistance Call Us

@@ -1,6 +1,13 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 
 const Offer = () => {
+    const history = useHistory();
+
+    const handleAppointment = () => {
+        history.push('/appointment');
+    }
+
     return (
         <>
             <div className="container mt-5 rounded-3 shadow-lg border-0">
@@ -8,7 +15,7 @@ const Offer = () => {
                     <div className="container">
                         <h3 className="text-white">Get Free Service This Weekend</h3>
                         <div>
-                            <button type="button" className="btn bg-white text-dark fw-bold">Grab Now</button>
+                            <button onClick={handleAppointment} type="button" className="btn bg-white text-dark fw-bold">Grab Now</button>
                         </div>
                     </div>
                 </nav>

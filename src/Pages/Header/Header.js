@@ -45,7 +45,7 @@ const Header = () => {
                                 <button onClick={handleSignIn} type="button" className="btn btn-info fw-bold rounded-pill fs-5 text-white me-2">Sign In</button>
                             </li>
                             <li className="nav-item">
-                                <button onClick={handleSignUp} type="button" className="btn btn-outline-info fw-bold rounded-pill fs-5">Sign Out</button>
+                                <button onClick={handleSignUp} type="button" className="btn btn-outline-info fw-bold rounded-pill fs-5">Sign Up</button>
                             </li>
                         </ul>
                     </div>

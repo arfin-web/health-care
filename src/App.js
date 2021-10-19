@@ -3,6 +3,7 @@ import './App.css';
 import About from './Pages/About/About';
 import Appointment from './Pages/Appointment/Appointment';
 import Contact from './Pages/Contact/Contact';
+import Doctordetails from './Pages/Doctors/Doctordetails/Doctordetails';
 import Doctors from './Pages/Doctors/Doctors';
 import Footer from './Pages/Footer/Footer';
 import Header from './Pages/Header/Header';
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route path="/service/:serviceId">
             <Servicedetails></Servicedetails>
+          </Route>
+          <Route path="/doctor/:serviceId">
+            <Doctordetails></Doctordetails>
           </Route>
           <Route path="/about">
             <About></About>

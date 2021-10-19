@@ -54,7 +54,7 @@ const Footer = () => {
                         </div>
                         <div className="col-lg-6 col-md-6 col-12">
                             <div className="border-0 rounded-3 shadow-lg">
-                                <img src={paymentPic} class="img-fluid" alt="..." />
+                                <img src={paymentPic} className="img-fluid" alt="..." />
                             </div>
                         </div>
                     </div>

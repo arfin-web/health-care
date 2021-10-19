@@ -12,6 +12,10 @@ const Service = ({ service }) => {
         history.push(`./service/${id}`);
     }
 
+    const handleAppointment = () => {
+        history.push('/appointment');
+    }
+
     return (
         <>
             <div className="col-lg-4 col-md-6 col-12">
@@ -22,7 +26,8 @@ const Service = ({ service }) => {
                     <div className="card-body ms-4">
                         <h3 className="card-title text-info">{title}</h3>
                         <h5 className="card-title text-muted">{doctor}</h5>
-                        <button onClick={() => handleServiceDetails(id)} type="button" className="btn btn-info text-white fw-bold mt-3 rounded-pill">Book Now</button>
+                        <button onClick={handleAppointment} type="button" className="btn btn-info text-white fw-bold mt-3 rounded-pill me-2">Book Now</button>
+                        <button onClick={() => handleServiceDetails(id)} type="button" className="btn btn-outline-info fw-bold mt-3 rounded-pill">Details</button>
                     </div>
                 </div>
             </div>
