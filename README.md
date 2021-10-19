@@ -1,10 +1,14 @@
-# Getting Started with Create React App
+# Welcome to one of the best Health Care Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Visit Our Website](https://medi-care-f5c49.web.app/).
 
-## Available Scripts
+## Main Features
 
-In the project directory, you can run:
+### Superfast Website
+### No loading website
+### Awesome animation added
+### Minimalist UI design
+### Flexible and User Friendly
 
 ### `npm start`
 
