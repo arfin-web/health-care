@@ -5,16 +5,24 @@ import Offer from './Offer/Offer';
 import Servicebanner from './Servicebanner/Servicebanner';
 import Homework from './Howwork/Howwork';
 import Doctors from '../Doctors/Doctors';
+import Zoom from 'react-reveal/Zoom';
+import Bounce from 'react-reveal/Bounce';
 
 const Home = () => {
     return (
         <>
             <Banner></Banner>
-            <Servicebanner></Servicebanner>
+            <Zoom>
+                <Servicebanner></Servicebanner>
+            </Zoom>
             <Services></Services>
             <Offer></Offer>
-            <Homework></Homework>
-            <Doctors></Doctors>
+            <Bounce>
+                <Homework></Homework>
+            </Bounce>
+            <Zoom>
+                <Doctors></Doctors>
+            </Zoom>
         </>
     );
 };

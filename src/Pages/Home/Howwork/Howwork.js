@@ -20,7 +20,7 @@ const Howwork = () => {
                                         <span className="placeholder col-6"></span>
                                         <span className="placeholder col-8"></span>
                                     </p>
-                                    <button tabindex="-1" className="btn btn-primary disabled placeholder col-6"></button>
+                                    <button tabindex="-1" className="btn btn-info disabled placeholder col-6"></button>
                                 </div>
                             </div>
                             <div className="card" aria-hidden="true">
@@ -35,7 +35,7 @@ const Howwork = () => {
                                         <span className="placeholder col-6"></span>
                                         <span className="placeholder col-8"></span>
                                     </p>
-                                    <button tabindex="-1" className="btn btn-primary disabled placeholder col-6"></button>
+                                    <button tabindex="-1" className="btn btn-info disabled placeholder col-6"></button>
                                 </div>
                             </div>
                             <div className="card" aria-hidden="true">
@@ -50,7 +50,7 @@ const Howwork = () => {
                                         <span className="placeholder col-6"></span>
                                         <span className="placeholder col-8"></span>
                                     </p>
-                                    <button tabindex="-1" className="btn btn-primary disabled placeholder col-6"></button>
+                                    <button tabindex="-1" className="btn btn-info disabled placeholder col-6"></button>
                                 </div>
                             </div>
                             <div className="card" aria-hidden="true">
@@ -65,7 +65,7 @@ const Howwork = () => {
                                         <span className="placeholder col-6"></span>
                                         <span className="placeholder col-8"></span>
                                     </p>
-                                    <button tabindex="-1" className="btn btn-primary disabled placeholder col-6"></button>
+                                    <button tabindex="-1" className="btn btn-info disabled placeholder col-6"></button>
                                 </div>
                             </div>
                         </div>
