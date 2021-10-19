@@ -11,12 +11,12 @@ import initializeAuthentication from "../Firebase/Firebase.init";
 initializeAuthentication();
 
 const useFirebase = () => {
-    const history = useHistory()
+    const history = useHistory();
 
     const [user, setUser] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [error, setError] = useState();
+    const [error, setError] = useState('');
 
     const auth = getAuth();
 
@@ -45,14 +45,14 @@ const useFirebase = () => {
     const emailVerification = () => {
         sendEmailVerification(auth.currentUser)
             .then(result => {
-                alert('Check your inbox')
+                alert('Check your inbox');
             })
     }
 
     const resetPassword = () => {
         sendPasswordResetEmail(auth, email)
             .then(result => {
-                alert('check your inbox')
+                alert('check your inbox');
             })
     }
 
@@ -63,7 +63,7 @@ const useFirebase = () => {
                 setUser(result.user)
                 console.log(result.user);
                 setError('');
-                alert('Login Success')
+                alert('Login Success');
                 history.push('/home');
             })
             .catch(error => {
@@ -79,7 +79,7 @@ const useFirebase = () => {
                 alert('Login Success');
                 history.push('/home');
             }).catch((error) => {
-                setError('')
+                setError('');
             });
     }
 
