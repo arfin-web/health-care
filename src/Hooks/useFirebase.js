@@ -3,9 +3,8 @@ import {
     onAuthStateChanged, sendEmailVerification, sendPasswordResetEmail,
     signInWithPopup, GoogleAuthProvider, signOut
 } from "firebase/auth";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useHistory } from "react-router";
-import { useState } from "react/cjs/react.development";
 import initializeAuthentication from "../Firebase/Firebase.init";
 
 initializeAuthentication();
@@ -13,10 +12,10 @@ initializeAuthentication();
 const useFirebase = () => {
     const history = useHistory();
 
-    const [user, setUser] = useState('');
+    const [user, setUser] = useState();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [error, setError] = useState('');
+    const [error, setError] = useState();
 
     const auth = getAuth();
 
@@ -25,9 +24,9 @@ const useFirebase = () => {
     const handleRegistration = (e) => {
         e.preventDefault();
         if (password.length < 6) {
-            setError('Password should be at least 6 character')
+            setError('Password should be at least 6 character');
             return;
-        }
+        };
         createUserWithEmailAndPassword(auth, email, password)
             .then((result) => {
                 setUser(result.user)
@@ -39,21 +38,21 @@ const useFirebase = () => {
             })
             .catch(error => {
                 setError(error.message);
-            })
+            });
     }
 
     const emailVerification = () => {
         sendEmailVerification(auth.currentUser)
             .then(result => {
                 alert('Check your inbox');
-            })
+            });
     }
 
     const resetPassword = () => {
         sendPasswordResetEmail(auth, email)
             .then(result => {
                 alert('check your inbox');
-            })
+            });
     }
 
     const handleLogin = (e) => {
@@ -68,7 +67,7 @@ const useFirebase = () => {
             })
             .catch(error => {
                 setError(error.message);
-            })
+            });
     }
 
     const signInWithGoogle = () => {
@@ -86,7 +85,7 @@ const useFirebase = () => {
     const logOut = () => {
         signOut(auth).then(() => {
             setUser('');
-        })
+        });
     }
 
     useEffect(() => {
@@ -94,8 +93,8 @@ const useFirebase = () => {
             if (user) {
                 setUser(user);
             }
-        })
-    }, [])
+        });
+    }, []);
 
     return {
         handleRegistration,
